@@ -1,7 +1,7 @@
 
 
 
-var projectName , projectClicked , SEOoptions  ; 
+var projectName , projectClicked , SEOoptions  , WEBoptions , DESIGNoptions ;
 /***********************************first page ********************/
 /*****************user choose project **********************/
 function setProjectName(id)
@@ -25,15 +25,20 @@ function checked()
 				{
 					document.getElementById("webOptions").style.display = "none";	
 					document.getElementById("seoOptions").style.display = "block";
+					document.getElementById("designOptions").style.display = "none";
 				}
 			else if(projectName =="web")
 				{
 					document.getElementById("webOptions").style.display = "block";
 					document.getElementById("seoOptions").style.display = "none";
+					document.getElementById("designOptions").style.display = "none";
 				}
 			else{
-				
+				document.getElementById("designOptions").style.display = "block";
+				document.getElementById("seoOptions").style.display = "none";
+				document.getElementById("webOptions").style.display = "none";
 			}
+			
 					
 			
 			
@@ -46,6 +51,9 @@ function checked()
 		}
 }
 /***************************************************************************************************/
+
+
+
 /**************************************SEO opation **************************************************/
 /********************choose an option **************************/
 function checkSEOOpations()
@@ -72,11 +80,71 @@ function checkedseooption()
 		}
 }
 /*************************************************/
-/*************backword button**************/
-function getBack(secId)
+
+
+/******************************************web options ********************************************************/
+/********************choose an option **************************/
+function checkWEBOpations()
 {
-	document.getElementById(secId).style.display="none";
+	WEBoptions = "checked"
+	
+}
+/********************************************************************/
+/***************ensure user slecet an option (button) ************/
+function checkedweboption() 
+{
+	if(WEBoptions === "checked")
+		{
+			document.getElementById("WEBoptionsBtn").setAttribute("data-toggle",""); 
+			document.getElementById("WEBoptionsBtn").setAttribute("data-target",""); 
+			document.getElementById("demo").innerHTML =" " ;
+			
+		}
+	else
+		{
+			document.getElementById("WEBoptionsBtn").setAttribute("data-toggle","modal"); 
+			document.getElementById("WEBoptionsBtn").setAttribute("data-target","#myModal"); 
+			document.getElementById("demo").innerHTML ="You Must Choose an option " ;
+		}
+}
+/*************************************************/
+
+
+/******************************************design options ********************************************************/
+/********************choose an option **************************/
+function checkDESIGNOpations()
+{
+	DESIGNoptions = "checked"
+	
+}
+/********************************************************************/
+/***************ensure user slecet an option (button) ************/
+function checkeddesignoption() 
+{
+	if(DESIGNoptions === "checked")
+		{
+			document.getElementById("DESIGNoptionsBtn").setAttribute("data-toggle",""); 
+			document.getElementById("DESIGNoptionsBtn").setAttribute("data-target",""); 
+			document.getElementById("demo").innerHTML =" " ;
+			
+		}
+	else
+		{
+			document.getElementById("DESIGNoptionsBtn").setAttribute("data-toggle","modal"); 
+			document.getElementById("DESIGNoptionsBtn").setAttribute("data-target","#myModal"); 
+			document.getElementById("demo").innerHTML ="You Must Choose an option " ;
+		}
+}
+/*************************************************/
+
+
+
+/*************backword button**************/
+function getBack()
+{
+	document.getElementById("seoOptions").style.display="none";
 	document.getElementById("webOptions").style.display = "none";
+	document.getElementById("designOptions").style.display = "none";
 	document.getElementById("first").style.display = "block";
 }
 /*********************************************************************************************************/

@@ -307,3 +307,95 @@ body
 }
 /***********edn con-3divs******/
 /***************************************end of web option*************************************/
+/**********************************************************************************************************/
+
+/********************************design options **************************************/
+.con-design-options-page
+{
+	padding-bottom: 50px ;
+	display: none ;
+}
+.con-design-options-page h3 
+{
+	color:black ; 
+	font-size: 2.9rem ; 
+}
+
+/***********con-3divs******/
+.con-design-options-page .container 
+{
+	margin-top: 75px ; 
+	
+	margin-bottom: 30px ;
+	
+}
+
+
+.con-design-options-page .container .col-md-3 
+{
+	min-height: 200px ; 
+	background-color:white ;
+	border:2px solid #eee ; 
+	border-radius: 10px ;
+	padding-bottom: 50px ;
+	padding-top: 30px ;
+	margin-left: 75px ;
+	margin-bottom: 30px ;
+	cursor: pointer ;
+	
+}
+@media only screen and (max-width: 900px) 
+{
+	.con-design-options-page .container .col-md-3
+	{
+		margin-left: 40px ;
+	}
+}
+.con-design-options-page .container .col-md-3:hover 
+{
+	
+	animation: leftBorder ease-in 0.7s forwards alternate;
+	
+}
+.con-design-options-page .container .col-md-3 .con-icon 
+{
+	float:right ; 
+	width: 25px ;
+	height: 25px ; 
+	background-color: #acd373 ;
+	border-radius: 50% ;
+	line-height: 25px ;
+	color:white ;
+	opacity: 0 ;
+	box-sizing: border-box ;
+	transition: 0.5s all ease-in-out ;
+}
+
+.con-design-options-page .container .col-md-3 img 
+{
+	max-width: 100% ; 
+	margin-bottom:10px ;
+	
+}
+.con-design-options-page .container .col-md-3  h5 
+{
+	color:#000 ; 
+	font-weight: bold ;
+	font-size: 1.7rem ;
+}
+.con-design-options-page .container .col-md-3 p
+{
+	color:#a5a5a5 ; 
+}
+
+@keyframes leftBorder
+{
+	0%{border-left:2px solid #acd373}
+	30%{border-top:2px solid #acd373}
+	60%{border-right: 2px solid #acd373}
+	90%{border-bottom: 2px solid #acd373}
+	100%{border:2px solid #acd373}
+	
+}
+/***********edn con-3divs******/
+/***************************************end of design option*************************************/
