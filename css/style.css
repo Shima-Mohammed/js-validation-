@@ -446,6 +446,12 @@ body
 	margin-bottom: 10px ;
 	border:2px solid #eee ;
 }
+.con-budget .container .con-btns .btn-block:active
+{
+	box-shadow: none ; 
+	border:none ; 
+	outline: none ;
+}
 .con-budget .container .con-btns .btn-block .con-icons
 {
 	float:right ; 
@@ -496,3 +502,30 @@ body
 }
 
 /***********************************end of user info ************************/
+/**************************************thanks************************/
+.thanks 
+{
+	display: none ;
+}
+.thanks h3
+{
+	font-size: 4.5rem ; 
+	color:#acd373 ;
+	font-weight: bold ;
+	
+	
+
+}
+.thanks img 
+{
+	max-width: 100% ; 
+	margin-bottom: 30px ;
+	
+}
+.thanks h5
+{
+	font-size: 2rem;
+	color:#777 ;
+	text-transform: capitalize ;
+	
+}

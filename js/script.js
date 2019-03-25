@@ -216,6 +216,7 @@ function checkInfo()
 	var emai = document.getElementById("email").value ; 
 	var fnam = document.getElementById("fname").value ; 
 	var lnam = document.getElementById("lname").value ;
+	var phon = document.getElementById("phone").value ; 
 	console.log(isNaN(Number(fnam)));
 	
 	
@@ -250,6 +251,12 @@ function checkInfo()
 			document.getElementById("cInfo").setAttribute("data-target","#myModal"); 
 			document.getElementById("demo").innerHTML ="You Must enter your Last Name" ;
 		}
+	else if(phon == ""  )
+		{
+			document.getElementById("cInfo").setAttribute("data-toggle","modal"); 
+			document.getElementById("cInfo").setAttribute("data-target","#myModal"); 
+			document.getElementById("demo").innerHTML ="You Must enter your Phone Number" ;
+		}
 	
 		else if(isNaN(Number(fnam)) == false)
 		{
@@ -267,7 +274,44 @@ function checkInfo()
 			document.getElementById("demo").innerHTML ="You Must enter  valid Last Name" ;
 			
 		}
+	 else if(isNaN(Number(phon)) ==true )
+	 {
+			
+			document.getElementById("cInfo").setAttribute("data-toggle","modal"); 
+			document.getElementById("cInfo").setAttribute("data-target","#myModal"); 
+			document.getElementById("demo").innerHTML ="You Must enter  valid Phone Number" ;
+			
+		}
 	
+	else if(phon.length>11)
+	 {
+			
+			document.getElementById("cInfo").setAttribute("data-toggle","modal"); 
+			document.getElementById("cInfo").setAttribute("data-target","#myModal"); 
+			document.getElementById("demo").innerHTML ="Your Phone number  must be consist of 11 digit" ;
+			
+	}
+	else if(phon.length <11)
+	 {
+			
+			document.getElementById("cInfo").setAttribute("data-toggle","modal"); 
+			document.getElementById("cInfo").setAttribute("data-target","#myModal"); 
+			document.getElementById("demo").innerHTML ="Your Phone number  must be consist of 11 digit" ;
+			
+	}
+	else if(phon[0] !="0")
+		{
+			document.getElementById("cInfo").setAttribute("data-toggle","modal"); 
+			document.getElementById("cInfo").setAttribute("data-target","#myModal"); 
+			document.getElementById("demo").innerHTML ="Your Phone number  must be start with '0'" ;
+		}
+	else if(phon[1] !="1")
+		{
+			document.getElementById("cInfo").setAttribute("data-toggle","modal"); 
+			document.getElementById("cInfo").setAttribute("data-target","#myModal"); 
+			document.getElementById("demo").innerHTML ="Your Phone number  must be start with '01'" ;
+		}
+		
 	else 
 		{
 			document.getElementById("cInfo").setAttribute("data-toggle",""); 
