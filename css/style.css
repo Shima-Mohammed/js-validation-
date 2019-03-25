@@ -7,6 +7,10 @@ body
 	font-family: 'Roboto Condensed', sans-serif;
 	
 }
+.clr 
+{
+	clear: both ;
+}
 /*****************************************************/
 /***************************first-page*********************/
 .con-first-page
@@ -47,12 +51,25 @@ body
 	margin-bottom: 30px ;
 	cursor: pointer ;
 	
+	
 }
 .con-first-page .container .col-md-3:hover 
 {
-	transform: translateZ(-2px);
-	animation: leftBorder ease-in 1s forwards;
+	
+	animation: leftBorder ease-in 1s forwards alternate;
+	
 }
+.con-first-page .container .col-md-3 .con-icon 
+{
+	float:right ; 
+	width: 25px ;
+	height: 25px ; 
+	background-color: #acd373 ;
+	border-radius: 50% ;
+	line-height: 25px ;
+	color:white ;
+}
+
 .con-first-page .container .col-md-3 img 
 {
 	max-width: 100% ; 
@@ -72,10 +89,11 @@ body
 
 @keyframes leftBorder
 {
-	0%{border-left:1px solid green}
-	30%{border-top:1px solid green}
-	60%{border-right: 1px solid green}
-	90%{border-bottom: 1px solid green}
+	0%{border-left:1px solid #acd373}
+	30%{border-top:1px solid #acd373}
+	60%{border-right: 1px solid #acd373}
+	90%{border-bottom: 1px solid #acd373}
+	100%{border:1px solid #acd373}
 	
 }
 /***********edn con-3divs******/
