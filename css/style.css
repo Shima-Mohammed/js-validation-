@@ -24,8 +24,45 @@ body
 	font-size: 1.2rem ;
 	
 }
+/***********con-3divs******/
 .con-first-page .container 
 {
 	margin-top: 75px ; 
+	margin-left:35px ;
+	
+	
 }
+
+
+.con-first-page .container .col-md-3 
+{
+	min-height: 200px ; 
+	background-color:white ;
+	border:1px solid #eee ; 
+	border-radius: 10px ;
+	padding-bottom: 50px ;
+	padding-top: 30px ;
+	padding-left: 25px ; 
+	padding-right: 25px ;
+	margin-bottom: 30px ;
+	cursor: pointer ;
+	
+}
+.con-first-page .container .col-md-3 img 
+{
+	max-width: 100% ; 
+	margin-bottom:10px ;
+	
+}
+.con-first-page .container .col-md-3  h5 
+{
+	color:#000 ; 
+	font-weight: bold ;
+	font-size: 1.7rem ;
+}
+.con-first-page .container .col-md-3 p
+{
+	color:#a5a5a5 ; 
+}
+/***********edn con-3divs******/
 /***********************************************************/
