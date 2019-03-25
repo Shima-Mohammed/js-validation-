@@ -48,5 +48,16 @@ $(document).ready(function(){
 	});
 	/*******************************************************************/
 	
+	/********************add budget option icon ************************/
+	
+	$(".btn-block").click(function(){
+		$(this).siblings().css("border","2px solid #eee ") ; 
+		$(this).css("border","2px solid #acd373") ; 
+		$(".btn-block .con-icons").css("opacity","0" );
+		$(this).children(".con-icons").css("opacity","1" ) ;
+	
+	});
+	/*******************************************************************/
+	
 /***************************************end of jqery functions*******************/	
 });

@@ -1,7 +1,7 @@
 
 
 
-var projectName , projectClicked , SEOoptions  , WEBoptions , DESIGNoptions ;
+var projectName , projectClicked , SEOoptions  , WEBoptions , DESIGNoptions , budgetCheck  ;
 /***********************************first page ********************/
 /*****************user choose project **********************/
 function setProjectName(id)
@@ -70,6 +70,8 @@ function checkedseooption()
 			document.getElementById("SEOoptionsBtn").setAttribute("data-toggle",""); 
 			document.getElementById("SEOoptionsBtn").setAttribute("data-target",""); 
 			document.getElementById("demo").innerHTML =" " ;
+			document.getElementById("seoOptions").style.display="none"; 
+			document.getElementById("budget").style.display="block" ; 
 			
 		}
 	else
@@ -98,7 +100,8 @@ function checkedweboption()
 			document.getElementById("WEBoptionsBtn").setAttribute("data-toggle",""); 
 			document.getElementById("WEBoptionsBtn").setAttribute("data-target",""); 
 			document.getElementById("demo").innerHTML =" " ;
-			
+			document.getElementById("webOptions").style.display="none"; 
+			document.getElementById("budget").style.display="block" ; 
 		}
 	else
 		{
@@ -126,6 +129,8 @@ function checkeddesignoption()
 			document.getElementById("DESIGNoptionsBtn").setAttribute("data-toggle",""); 
 			document.getElementById("DESIGNoptionsBtn").setAttribute("data-target",""); 
 			document.getElementById("demo").innerHTML =" " ;
+			document.getElementById("designOptions").style.display="none"; 
+			document.getElementById("budget").style.display="block" ; 
 			
 		}
 	else
@@ -148,3 +153,56 @@ function getBack()
 	document.getElementById("first").style.display = "block";
 }
 /*********************************************************************************************************/
+
+/******************************************budget btns ***************************************************/
+function btnBudget()
+{
+	budgetCheck ="checked";
+}
+
+
+
+function checkedbudgetoption() 
+{
+	if(budgetCheck === "checked")
+		{
+			document.getElementById("BUDGEToptionsBtn").setAttribute("data-toggle",""); 
+			document.getElementById("BUDGEToptionsBtn").setAttribute("data-target",""); 
+			document.getElementById("demo").innerHTML =" " ;
+			document.getElementById("budget").style.display="none"; 
+			 
+			
+		}
+	else
+		{
+			document.getElementById("BUDGEToptionsBtn").setAttribute("data-toggle","modal"); 
+			document.getElementById("BUDGEToptionsBtn").setAttribute("data-target","#myModal"); 
+			document.getElementById("demo").innerHTML ="You Must Choose an option " ;
+		}
+}
+
+
+
+
+function getBackOptions()
+{
+	if(projectName =="seo")
+		{
+			document.getElementById("budget").style.display="none"; 
+			document.getElementById("seoOptions").style.display="block";
+	        document.getElementById("webOptions").style.display = "none";
+			document.getElementById("designOptions").style.display = "none";
+		}
+	else if(projectName =="web")
+		{
+			
+		}
+	
+	else{
+		    document.getElementById("budget").style.display="none"; 
+			document.getElementById("seoOptions").style.display="none";
+	        document.getElementById("webOptions").style.display = "none";
+			document.getElementById("designOptions").style.display = "block";
+	}
+}
+/************************************************************************************************************/
