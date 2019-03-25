@@ -170,6 +170,7 @@ function checkedbudgetoption()
 			document.getElementById("BUDGEToptionsBtn").setAttribute("data-target",""); 
 			document.getElementById("demo").innerHTML =" " ;
 			document.getElementById("budget").style.display="none"; 
+			document.getElementById("userInfo").style.display="block";
 			 
 			
 		}
@@ -206,3 +207,83 @@ function getBackOptions()
 	}
 }
 /************************************************************************************************************/
+/*******************************************user info******************************************************/
+
+
+function checkInfo()
+{
+	var comp = document.getElementById("company").value ; 
+	var emai = document.getElementById("email").value ; 
+	var fnam = document.getElementById("fname").value ; 
+	var lnam = document.getElementById("lname").value ;
+	console.log(isNaN(Number(fnam)));
+	
+	
+	if(comp =="")
+		{
+			document.getElementById("cInfo").setAttribute("data-toggle","modal"); 
+			document.getElementById("cInfo").setAttribute("data-target","#myModal"); 
+			document.getElementById("demo").innerHTML ="You Must enter Company Name" ; 
+		}
+	else if(emai == "")
+		{
+			document.getElementById("cInfo").setAttribute("data-toggle","modal"); 
+			document.getElementById("cInfo").setAttribute("data-target","#myModal"); 
+			document.getElementById("demo").innerHTML ="You Must enter your Email" ;
+		}
+	else if (emai.indexOf('@') == -1){
+		
+		   document.getElementById("cInfo").setAttribute("data-toggle","modal"); 
+			document.getElementById("cInfo").setAttribute("data-target","#myModal"); 
+			document.getElementById("demo").innerHTML ="You Must enter Valid Email" ;
+	}
+	else if(fnam == ""  )
+		{
+			document.getElementById("cInfo").setAttribute("data-toggle","modal"); 
+			document.getElementById("cInfo").setAttribute("data-target","#myModal"); 
+			document.getElementById("demo").innerHTML ="You Must enter your First Name" ;
+		}
+	
+	else if(lnam == ""  )
+		{
+			document.getElementById("cInfo").setAttribute("data-toggle","modal"); 
+			document.getElementById("cInfo").setAttribute("data-target","#myModal"); 
+			document.getElementById("demo").innerHTML ="You Must enter your Last Name" ;
+		}
+	
+		else if(isNaN(Number(fnam)) == false)
+		{
+			
+			document.getElementById("cInfo").setAttribute("data-toggle","modal"); 
+			document.getElementById("cInfo").setAttribute("data-target","#myModal"); 
+			document.getElementById("demo").innerHTML ="You Must enter  valid First Name" ;
+			
+		}
+	 else if(isNaN(Number(lnam)) ==false)
+	 {
+			
+			document.getElementById("cInfo").setAttribute("data-toggle","modal"); 
+			document.getElementById("cInfo").setAttribute("data-target","#myModal"); 
+			document.getElementById("demo").innerHTML ="You Must enter  valid Last Name" ;
+			
+		}
+	
+	else 
+		{
+			document.getElementById("cInfo").setAttribute("data-toggle",""); 
+			document.getElementById("cInfo").setAttribute("data-target",""); 
+			document.getElementById("demo").innerHTML ="" ;
+			document.getElementById("userInfo").style.display="none";  
+			document.getElementById("tanks").style.display="block";
+		}
+	
+	
+	
+}
+
+
+
+function getBackBudget(){
+	document.getElementById("userInfo").style.display="none"; 
+	document.getElementById("budget").style.display="block";
+}

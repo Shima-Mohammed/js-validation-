@@ -23,6 +23,11 @@ body
 	word-spacing: 3px ;
 	font-size: 16px ;
 }
+.modal-content
+{
+
+	
+}
 
 /*****************************************************/
 /***************************first-page*********************/
@@ -448,3 +453,46 @@ body
 	opacity: 0 ;
 }
 /**************************end of budget******************************/
+
+/*********************************************************************************************/
+
+/*******************************user info*****************************/
+.con-info
+{
+	
+	padding-bottom: 50px ;
+	display: none ;
+	
+}
+.con-info h3 
+{
+	color:black ; 
+	font-size: 2.9rem ; 
+}
+/*****************con-user-info**********/
+.con-info .con-user-info
+{
+	margin-top: 30px ;
+	min-height: 00px;
+	padding-top: 30px;
+	padding-bottom: 30px ;
+	background-color: #acd373 ; 
+	border:1ps solid #acd373 ; 
+	border-radius: 15px ;
+	position: relative ;
+	margin-bottom: 50px ;
+	
+}
+.con-info .con-user-info input 
+{
+	width: 80% ;
+	padding: 10px ;
+	margin-left: 10% ;
+	margin-bottom: 15px ;
+	color:#acd373 ; 
+	border-radius: 5px ;
+	outline: none ;
+	border: none ;
+}
+
+/***********************************end of user info ************************/
