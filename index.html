@@ -16,7 +16,7 @@
 			
 			
 		<!-------------------------------first-page------------------------------------------------->	
-			<div class="con-first-page text-center ">
+			<div class="con-first-page text-center  " id="first">
 				<h3>What Type of Project do you need?</h3>
 				<h6>Selection with Branch (First Branch). Web Development have a <b>Second Branch.</b></h6>
 				<!----------------con-3divs---------------->
@@ -72,7 +72,7 @@
 			
 	
 	<!-------------------------------SEO options------------------------------------------------->	
-			<div class="con-seo-options-page text-center ">
+			<div class="con-seo-options-page text-center " id="seoOptions">
 				<h3>What Type of Seo Optimization do you need?</h3>
 				
 				<!----------------con-3divs---------------->
@@ -81,8 +81,8 @@
 						
 						<div
 							 
-							id="PAGE"
-							onclick="checkSEOOpations(id)"
+							
+							onclick="checkSEOOpations()"
 							 class="col-md-3 seo-options  col-sm-offset-1 col-xs-offset-1 col-xs-10">
 							<div class="con-icon"><i class="fas fa-check"></i></div>
 							<div class="clr"></div>
@@ -92,8 +92,8 @@
 						</div>
 						
 						<div
-							 id="PAY"
-							onclick="checkSEOOpations(id)"
+							 
+							onclick="checkSEOOpations()"
 							 class="col-md-3 seo-options  col-sm-offset-1 col-xs-offset-1 col-xs-10">
 							<div class="con-icon"><i class="fas fa-check"></i></div>
 							<div class="clr"></div>
@@ -103,8 +103,8 @@
 						</div>
 						
 						<div 
-							 id="BACKLINKS"
-							onclick="checkSEOOpations(id)"
+							 
+							onclick="checkSEOOpations()"
 							 class="col-md-3  seo-options  col-sm-offset-1 col-xs-offset-1 col-xs-10 ">
 							<div class="con-icon"><i class="fas fa-check"></i></div>
 							<div class="clr"></div>
@@ -116,7 +116,75 @@
 				</div>
 				<!----------------end con-3divs---------------->
 				
+				<button
+						onclick="getBack('seoOptions')"
+						id="back"
+						class="btn"
+						>
+					BackWord
+				</button>
 				<button 
+						id="SEOoptionsBtn"
+						onclick="checkedseooption()"
+						class="btn btn-info"
+						 
+						>Forword <i class="fas fa-chevron-right"></i></button>
+				
+			</div>
+				
+		<!----------------------------------end of SEO options------------------------------------>	
+					
+			
+			
+			
+			<!-------------------------------web options------------------------------------------------->	
+			<div class="con-web-options-page text-center " id="webOptions">
+				<h3>What Type of Seo Optimization do you need?</h3>
+				
+				<!----------------con-3divs---------------->
+				<div class="container">
+					<div class="row">
+						
+						<div
+							 
+							
+							onclick="checkWEBOpations()"
+							 class="col-md-3 we-options  col-sm-offset-1 col-xs-offset-1 col-xs-10">
+							<div class="con-icon"><i class="fas fa-check"></i></div>
+							<div class="clr"></div>
+							<img src="images/web_development_icon_2.svg">
+							<h5>HTML DEVELOPMENT</h5>
+							<p>Postea democritum mnesarchum ne nam, ad vim aperiri tractatos.</p>
+						</div>
+						
+						<div
+							 
+							onclick="checkWEBOpations()"
+							 class="col-md-3 web-options  col-sm-offset-1 col-xs-offset-1 col-xs-10">
+							<div class="con-icon"><i class="fas fa-check"></i></div>
+							<div class="clr"></div>
+							<img src="images/web_development_icon_3.svg">
+							<h5>CMS DEVELOPMENT</h5>
+							<p>Postea democritum mnesarchum ne nam, ad vim aperiri tractatos.</p>
+						</div>
+						
+						<div 
+							 
+							onclick="checkWEBOpations()"
+							 class="col-md-3  web-options  col-sm-offset-1 col-xs-offset-1 col-xs-10 ">
+							<div class="con-icon"><i class="fas fa-check"></i></div>
+							<div class="clr"></div>
+							<img src="images/web_development_icon_4.svg">
+							<h5>FRONTEND DEVELOPMENT</h5>
+							<p>Postea democritum mnesarchum ne nam, ad vim aperiri tractatos.</p>
+						</div>
+					</div>
+				</div>
+				<!----------------end con-3divs---------------->
+				
+				<button
+						onclick="getBack('seoOptions')"
+						id="back"
 						class="btn"
 						>
 					BackWord
@@ -132,10 +200,6 @@
 				
 		<!----------------------------------end of first-page ------------------------------------>	
 					
-			
-			
-			
-			
 			
 			
 			

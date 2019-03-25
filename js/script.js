@@ -20,6 +20,23 @@ function checked()
 			document.getElementById("firstBtn").setAttribute("data-toggle",""); 
 			document.getElementById("firstBtn").setAttribute("data-target",""); 
 			document.getElementById("demo").innerHTML =" " ;
+			document.getElementById("first").style.display = "none";
+			if(projectName =="seo")
+				{
+					document.getElementById("webOptions").style.display = "none";	
+					document.getElementById("seoOptions").style.display = "block";
+				}
+			else if(projectName =="web")
+				{
+					document.getElementById("webOptions").style.display = "block";
+					document.getElementById("seoOptions").style.display = "none";
+				}
+			else{
+				
+			}
+					
+			
+			
 		}
 	else
 		{
@@ -30,14 +47,14 @@ function checked()
 }
 /***************************************************************************************************/
 /**************************************SEO opation **************************************************/
-/***********************************choose an option ************************************/
-function checkedseooption(id)
+/********************choose an option **************************/
+function checkSEOOpations()
 {
 	SEOoptions = "checked"
 	
 }
-/*******************************************************************************/
-/*********************************ensure user slecet an option (button) ******************/
+/********************************************************************/
+/***************ensure user slecet an option (button) ************/
 function checkedseooption() 
 {
 	if(SEOoptions === "checked")
@@ -45,6 +62,7 @@ function checkedseooption()
 			document.getElementById("SEOoptionsBtn").setAttribute("data-toggle",""); 
 			document.getElementById("SEOoptionsBtn").setAttribute("data-target",""); 
 			document.getElementById("demo").innerHTML =" " ;
+			
 		}
 	else
 		{
@@ -53,4 +71,12 @@ function checkedseooption()
 			document.getElementById("demo").innerHTML ="You Must Choose an option " ;
 		}
 }
-/*************************************************************************************/
+/*************************************************/
+/*************backword button**************/
+function getBack(secId)
+{
+	document.getElementById(secId).style.display="none";
+	document.getElementById("webOptions").style.display = "none";
+	document.getElementById("first").style.display = "block";
+}
+/*********************************************************************************************************/
