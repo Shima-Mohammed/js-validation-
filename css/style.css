@@ -33,7 +33,7 @@ body
 {
 	margin-top: 75px ; 
 	margin-left:35px ;
-	
+	margin-bottom: 30px ;
 	
 }
 
@@ -42,7 +42,7 @@ body
 {
 	min-height: 200px ; 
 	background-color:white ;
-	border:1px solid #eee ; 
+	border:2px solid #eee ; 
 	border-radius: 10px ;
 	padding-bottom: 50px ;
 	padding-top: 30px ;
@@ -56,7 +56,7 @@ body
 .con-first-page .container .col-md-3:hover 
 {
 	
-	animation: leftBorder ease-in 2s forwards alternate;
+	animation: leftBorder ease-in 0.7s forwards alternate;
 	
 }
 .con-first-page .container .col-md-3 .con-icon 
@@ -69,6 +69,7 @@ body
 	line-height: 25px ;
 	color:white ;
 	opacity: 0 ;
+	box-sizing: border-box ;
 	transition: 0.5s all ease-in-out ;
 }
 
@@ -91,12 +92,24 @@ body
 
 @keyframes leftBorder
 {
-	0%{border-left:1px solid #acd373}
-	30%{border-top:1px solid #acd373}
-	60%{border-right: 1px solid #acd373}
-	90%{border-bottom: 1px solid #acd373}
-	100%{border:1px solid #acd373}
+	0%{border-left:2px solid #acd373}
+	30%{border-top:2px solid #acd373}
+	60%{border-right: 2px solid #acd373}
+	90%{border-bottom: 2px solid #acd373}
+	100%{border:2px solid #acd373}
 	
 }
 /***********edn con-3divs******/
+/***********btn***************/
+.btn 
+{
+	padding-top: 10px ; 
+	padding-bottom: 10px ;
+	padding-left: 25px ; 
+	padding-right: 25px ;
+	border:none ; 
+	outline: none ; 
+	word-spacing: 3px ;
+	font-size: 16px ;
+}
 /***********************************************************/
