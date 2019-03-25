@@ -32,7 +32,7 @@ body
 .con-first-page .container 
 {
 	margin-top: 75px ; 
-	margin-left:35px ;
+	
 	margin-bottom: 30px ;
 	
 }
@@ -46,12 +46,17 @@ body
 	border-radius: 10px ;
 	padding-bottom: 50px ;
 	padding-top: 30px ;
-	padding-left: 25px ; 
-	padding-right: 25px ;
+	margin-left: 75px ;
 	margin-bottom: 30px ;
 	cursor: pointer ;
 	
-	
+}
+@media only screen and (max-width: 1000px) 
+{
+	.con-first-page .container .col-md-3
+	{
+		margin-left: 40px ;
+	}
 }
 .con-first-page .container .col-md-3:hover 
 {
